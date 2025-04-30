@@ -45,7 +45,7 @@ From now on, only your custom host "example.com" where asked
 
 ### VM Setup 
 
-Go to `./commands.md` for more information 
+Go to [`./commands.md`](https://github.com/dcrebbin/azure-vpn/blob/main/commands.md) for more information
 
 ### Client (MacOS Instructions Only)
 
@@ -53,13 +53,13 @@ Go to `./commands.md` for more information
 
 2. Once running -> Select ClashX from your toolbar -> Config -> Open config folder
 
-3. Replace the default `config.yaml` with the `./clash.yaml` in this repo
+3. Replace the default `config.yaml` with the [`./clash.yaml`](https://github.com/dcrebbin/azure-vpn/blob/main/clash.yaml) in this repo
 
 4. (ClashX Dropdown) -> Config -> Reload Config
 
 5. (ClashX Dropdown) -> GLOBAL -> Benchmark
 
-If "cash" is green or yellow your VPN is now woring
+If "clash" is green or yellow your VPN is now woring
 
 #### Debuging
 
