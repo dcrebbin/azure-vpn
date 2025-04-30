@@ -9,7 +9,9 @@ How to setup a Shadowsock VPN with a $5per month VM hosted on Azure
 
 ### Azure VM
 
-1. Head to portal.azure.com -> Virtual Machines -> Create
+1. Head to [portal.azure.com](https://portal.azure.com/) and create an account
+   
+    a. Once Created -> Virtual Machines -> Create
 
 <img width="811" alt="Screenshot 2025-05-01 at 3 41 51 am" src="https://github.com/user-attachments/assets/6cb39811-df2d-46ed-85b8-651949d43f3e" />
 
