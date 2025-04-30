@@ -53,7 +53,7 @@ Go to `./commands.md` for more information
 
 2. Once running -> Select ClashX from your toolbar -> Config -> Open config folder
 
-3. Replace the default `config.yaml` with the `./config.yaml` in this repo
+3. Replace the default `config.yaml` with the `./clash.yaml` in this repo
 
 4. (ClashX Dropdown) -> Config -> Reload Config
 
