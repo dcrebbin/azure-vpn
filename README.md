@@ -1,6 +1,6 @@
-# Azure VPN
+# Azure Proxy/VPN
 
-How to setup a Shadowsock VPN with a $5per month VM hosted on Azure
+How to setup a Shadowsocks proxy/VPN with a $5 per month VM hosted on Azure
 (similar process for other Linux VMs too)
 
 ## Requirements:
