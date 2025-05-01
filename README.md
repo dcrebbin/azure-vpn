@@ -49,7 +49,7 @@ From now on, only your custom host "example.com" where asked
 
 Go to [`./commands.md`](https://github.com/dcrebbin/azure-vpn/blob/main/commands.md) for more information
 
-### Client (MacOS Instructions Only)
+### Mac Client [(ClashX)](https://en.clashx.org) (Free)
 
 1. Go to https://en.clashx.org -> Free Download
 
@@ -63,6 +63,63 @@ Go to [`./commands.md`](https://github.com/dcrebbin/azure-vpn/blob/main/commands
 
 If "clash" is green or yellow your VPN is now woring
 
-#### Debuging
+#### ClashX Debugging
 
 1. (ClashX Dropdown) -> Setting -> Debug -> Open Log Folder -> (Open the latest log file in a text editor)
+
+### iOS Client [(Shadowrocket)](https://apps.apple.com/us/app/shadowrocket/id932747118) (Paid: $2.99 USD)
+
+Notes on other clients (Free)
+- V2Box - V2ray Client: Not working
+- Potatso: Not working
+- v2RayTun: Not working
+- Spectre VPN: Not working
+
+Shadowrocket appears to be the only iOS app that has a big enough feature set that we can correctly configure your Shadowsocks VPN.
+However let me know if there are any working free alternatives.
+
+1. Add Server
+   - Address: IP/Custom Domain
+   - Port: 443
+   - Password: Configured Password
+   - Method: aes-256-cfb
+   - Obfuscation: none
+   - Plugin: v2ray-plugin
+   - One Time Auth: Off
+   - TCP Fast Open: Off
+   - UDP Relay: Off
+   - Remarks: *some-name*
+
+3. v2ray-plugin details:
+   - Address: None
+   - Port: None
+   - Mode: websocket
+   - TLS: True
+   - Allow Insecure: True (or false is you have setup Lets Encrypt on your server instead of a self-siged one)
+   - SNI: None
+   - TCP Fast Open: Off
+   - Muxing: On
+   - Path: /
+
+3. Save Server
+
+4. Settings -> Proxy Settings:
+   - Compatability Mode: On
+   - Proxy Type: None
+   - Proxy Port: 7890
+   - Proxy Address: 127.0.0.1
+  
+5. (Optional) Settings -> Tunnel (Up to you depending on your use case)
+   - Enforce Routes: On
+   - Include All Networks: True
+   - Include Local Networks: True
+   - Include APNs: False
+   - Include Cellular Services: True
+  
+6. Settings -> Test Method -> Connect
+
+7. Tap *Connectivity Test*: If Green or Yellow with XXXms then you are good to go!
+
+#### iOS Shadowrocket Debuging
+
+1. Settings -> Diagnostics -> Enable Logging -> Visit Address (https://...../7890/api/log) via a Web Browser
